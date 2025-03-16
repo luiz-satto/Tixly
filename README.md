@@ -1,4 +1,6 @@
-# Tixly
+# Tixly.API Documentation
+## Overview
+
 The API allows users to create, update, retrieve, and delete events and tickets, as well as generate sales reports.
 
 Using ASP.NET Core Minimal APIs and latest features of .NET8 and C# 12.
@@ -119,3 +121,131 @@ Delete an event.
 - `404 Not Found`: Event not found.
 
 ---
+
+### Ticket Management
+
+#### 6. Get Ticket
+**GET** `/api/Ticket/GetTicket`
+
+Retrieve ticket details.
+
+**Query Parameters:**
+
+- `Id (UUID, required)`: The unique identifier of the ticket.
+
+**Responses:**
+
+- `200 OK`: Returns TicketDto.
+- `400 Bad Request`: Invalid request parameters.
+- `404 Not Found`: Ticket not found.
+
+---
+
+#### 7. Get Ticket List
+**GET** `/api/Ticket/GetTicketList`
+
+Retrieve a paginated list of tickets.
+
+**Query Parameters:**
+
+- `PageIndex (integer, optional)`: The page index for pagination.
+- `PageSize (integer, optional)`: The number of tickets per page.
+
+**Responses:**
+
+- `200 OK`: Returns TicketDtoPaginatedResult.
+- `400 Bad Request`: Invalid request parameters.
+
+---
+
+#### 8. Create Ticket
+**POST** `/api/Ticket/CreateTicket`
+
+Create a new ticket.
+
+**Request Body (JSON):**
+```json
+{
+  "price": 50.0,
+  "status": "string",
+  "eventId": "uuid",
+  "userId": "uuid"
+}
+```
+
+**Responses:**
+
+- `201 Created`: Returns the created ticket's ID.
+- `400 Bad Request`: Invalid request data.
+
+---
+
+#### 9. Update Ticket
+**PATCH** `/api/Ticket/UpdateTicket`
+
+Update an existing ticket.
+
+**Request Body (JSON):**
+```json
+{
+  "id": "uuid",
+  "price": 60.0,
+  "status": "string"
+}
+```
+
+**Responses:**
+
+- `200 OK`: Returns updated TicketDto.
+- `400 Bad Request`: Invalid request data.
+- `404 Not Found`: Ticket not found.
+
+---
+
+#### 10. Delete Ticket
+**DELETE** `/api/Ticket/DeleteTicket`
+
+Delete a ticket.
+
+**Query Parameters:**
+
+- `Id (UUID, required)`: The unique identifier of the ticket.
+
+**Responses:**
+
+- `200 OK`: Returns true if deletion was successful.
+- `400 Bad Request`: Invalid request.
+- `404 Not Found`: Ticket not found.
+
+---
+
+### Sales Report
+
+#### 11. Get Sales Report by Event
+**GET** `/api/SalesReport/GetSalesReportByEvent`
+
+Retrieve a paginated sales report for events.
+
+**Query Parameters:**
+
+- `PageIndex (integer, optional)`: The page index for pagination.
+- `PageSize (integer, optional)`: The number of sales reports per page.
+
+**Responses:**
+
+- `200 OK`: Returns SalesReportDtoPaginatedResult.
+- `400 Bad Request`: Invalid request parameters.
+- `404 Not Found`: No reports found.
+
+---
+
+### 12. Export Sales Report by Event
+**GET** `/api/SalesReport/ExportSalesReportByEvent`
+
+Export sales report data.
+
+**Responses:**
+
+- `200 OK`: Returns sales report data.
+- `400 Bad Request`: Invalid request.
+- `404 Not Found`: No reports found.
