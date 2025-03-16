@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tixly.API", "Tixly.API\Tixly.API.csproj", "{F93637BF-46D1-4266-9312-4B5E62C7DF0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tixly.Infrastructure", "Tixly.Infrastructure\Tixly.Infrastructure.csproj", "{A4C51123-7503-4B26-8D41-1FB00215D000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks.csproj", "{06D8C3EA-DAED-4920-B0BC-95A742ADB8E9}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8200A496-E7EB-494E-8EF2-D8C7FD33CD4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tixly.Domain", "Tixly.Domain\Tixly.Domain.csproj", "{DD0DA064-FDBA-4175-A2BB-33FD82F23C47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tixly.Application", "Tixly.Application\Tixly.Application.csproj", "{52857645-EA31-4F39-8F72-254E5F1391E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tixly.Tests", "..\Tixly.Tests\Tixly.Tests.csproj", "{F6D7F029-966C-41B6-A7DE-B054A4EBC17A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F93637BF-46D1-4266-9312-4B5E62C7DF0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93637BF-46D1-4266-9312-4B5E62C7DF0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93637BF-46D1-4266-9312-4B5E62C7DF0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93637BF-46D1-4266-9312-4B5E62C7DF0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C51123-7503-4B26-8D41-1FB00215D000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C51123-7503-4B26-8D41-1FB00215D000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C51123-7503-4B26-8D41-1FB00215D000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C51123-7503-4B26-8D41-1FB00215D000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D8C3EA-DAED-4920-B0BC-95A742ADB8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D8C3EA-DAED-4920-B0BC-95A742ADB8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D8C3EA-DAED-4920-B0BC-95A742ADB8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D8C3EA-DAED-4920-B0BC-95A742ADB8E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8200A496-E7EB-494E-8EF2-D8C7FD33CD4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8200A496-E7EB-494E-8EF2-D8C7FD33CD4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8200A496-E7EB-494E-8EF2-D8C7FD33CD4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8200A496-E7EB-494E-8EF2-D8C7FD33CD4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0DA064-FDBA-4175-A2BB-33FD82F23C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0DA064-FDBA-4175-A2BB-33FD82F23C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0DA064-FDBA-4175-A2BB-33FD82F23C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0DA064-FDBA-4175-A2BB-33FD82F23C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52857645-EA31-4F39-8F72-254E5F1391E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52857645-EA31-4F39-8F72-254E5F1391E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52857645-EA31-4F39-8F72-254E5F1391E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52857645-EA31-4F39-8F72-254E5F1391E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D7F029-966C-41B6-A7DE-B054A4EBC17A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D7F029-966C-41B6-A7DE-B054A4EBC17A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D7F029-966C-41B6-A7DE-B054A4EBC17A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D7F029-966C-41B6-A7DE-B054A4EBC17A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

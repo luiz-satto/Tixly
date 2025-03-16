@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  tixlydb:
+    image: mcr.microsoft.com/mssql/server
+
+  tixly.api:
+    image: ${DOCKER_REGISTRY-}tixlyapi
+    build:
+      context: .
+      dockerfile: Tixly.API/Dockerfile
+
+volumes:
+  mssql_tixly:
